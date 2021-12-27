@@ -7,9 +7,7 @@ import me.alpha432.oyvey.event.events.Render3DEvent;
 import me.alpha432.oyvey.features.Feature;
 import me.alpha432.oyvey.features.gui.OyVeyGui;
 import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.features.modules.client.FontMod;
-import me.alpha432.oyvey.features.modules.client.HUD;
+import me.alpha432.oyvey.features.modules.client.*;
 import me.alpha432.oyvey.features.modules.combat.*;
 import me.alpha432.oyvey.features.modules.misc.*;
 import me.alpha432.oyvey.features.modules.movement.*;
@@ -37,6 +35,8 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new CSGOWatermark());
+        this.modules.add(new AutoKit());
         this.modules.add(new ClickGui());
         this.modules.add(new FontMod());
         this.modules.add(new ExtraTab());

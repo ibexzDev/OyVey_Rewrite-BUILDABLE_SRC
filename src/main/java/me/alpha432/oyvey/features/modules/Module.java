@@ -188,7 +188,8 @@ public class Module
         RENDER("Render"),
         MOVEMENT("Movement"),
         PLAYER("Player"),
-        CLIENT("Client");
+        CLIENT("Client"),
+        PhobosLite("PhobosLite");
 
         private final String name;
 
