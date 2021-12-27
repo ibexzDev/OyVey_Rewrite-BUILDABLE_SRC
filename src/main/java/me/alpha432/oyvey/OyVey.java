@@ -41,7 +41,7 @@ public class OyVey {
     }
 
     public static void load() {
-        LOGGER.info("\n\nLoading OyVey by Alpha432");
+        LOGGER.info("\n\nLoading PhobosLite by AlphaArmor");
         unloaded = false;
         if (reloadManager != null) {
             reloadManager.unload();
@@ -71,11 +71,11 @@ public class OyVey {
         LOGGER.info("EventManager loaded.");
         textManager.init(true);
         moduleManager.onLoad();
-        LOGGER.info("OyVey successfully loaded!\n");
+        LOGGER.info("PhobosLite successfully loaded!\n");
     }
 
     public static void unload(boolean unload) {
-        LOGGER.info("\n\nUnloading OyVey by Alpha432");
+        LOGGER.info("\n\nUnloading PhobosLite by AlphaArmor");
         if (unload) {
             reloadManager = new ReloadManager();
             reloadManager.init(commandManager != null ? commandManager.getPrefix() : ".");
@@ -96,7 +96,7 @@ public class OyVey {
         inventoryManager = null;
         moduleManager = null;
         textManager = null;
-        LOGGER.info("OyVey unloaded!\n");
+        LOGGER.info("Phoboslite unloaded!\n");
     }
 
     public static void reload() {
@@ -116,12 +116,12 @@ public class OyVey {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        LOGGER.info("I am gona gas you kike - Alpha432");
+        LOGGER.info("I am gona gas you kike - AlphaArmor");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        Display.setTitle("OyVey v0.0.3");
+        Display.setTitle("PhobosLite | Made By AlphaArmor");
         OyVey.load();
     }
 }

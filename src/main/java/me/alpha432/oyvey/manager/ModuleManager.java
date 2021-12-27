@@ -35,6 +35,7 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new Velocity());
         this.modules.add(new PopChams());
         this.modules.add(new CSGOWatermark());
         this.modules.add(new AutoKit());
