@@ -15,7 +15,7 @@ public class AutoKit extends Module {
     }
     @Override
     public void onEnable() {
-        Command.sendMessage("[Phobos+] Claimed kit " + kitname.getValue());
+        Command.sendMessage("Claimed kit " + kitname.getValue());
         mc.player.sendChatMessage("/kit " + kitname.getValue());
         this.disable();
     }

@@ -1,5 +1,6 @@
 package me.alpha432.oyvey;
 
+import me.alpha432.oyvey.features.Feature;
 import me.alpha432.oyvey.manager.*;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

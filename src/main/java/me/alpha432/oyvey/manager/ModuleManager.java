@@ -35,6 +35,7 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new PopChams());
         this.modules.add(new CSGOWatermark());
         this.modules.add(new AutoKit());
         this.modules.add(new ClickGui());
@@ -77,9 +78,6 @@ public class ModuleManager
         this.modules.add(new AutoArmor());
         this.modules.add(new Speed());
         this.modules.add(new Step());
-        this.modules.add(new Flight());
-        this.modules.add(new Scaffold());
-        this.modules.add(new PacketFly());
         this.modules.add(new FastPlace());
         this.modules.add(new ESP());
         this.modules.add(new Selftrap());
