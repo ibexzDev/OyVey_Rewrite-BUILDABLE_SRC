@@ -30,6 +30,11 @@ public class NarratorTweaks extends Module {
         super("NarratorTweaks", "Sends messages through narrator", Module.Category.MISC, true, false, false);
     }
 
+    @Override
+    public void onDisable(){
+        narrator.clear();
+    }
+
     @SubscribeEvent
     public void onTotemPop(TotemPopEvent event) {
         if(event.getEntity() == mc.player) {
