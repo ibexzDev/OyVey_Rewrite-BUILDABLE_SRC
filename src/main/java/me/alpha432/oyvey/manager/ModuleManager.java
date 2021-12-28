@@ -37,6 +37,7 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new NarratorTweaks());
         this.modules.add(new GlintModify());
         this.modules.add(new HitMarkers());
         this.modules.add(new Quiver());
