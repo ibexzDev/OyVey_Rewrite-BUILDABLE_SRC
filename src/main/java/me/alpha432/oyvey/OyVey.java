@@ -11,6 +11,7 @@ import org.lwjgl.opengl.Display;
 
 @Mod(modid = "oyvey", name = "OyVey", version = "0.0.3")
 public class OyVey {
+    public static PlayerManager playerManager;
     public static final String MODID = "oyvey";
     public static final String MODNAME = "OyVey";
     public static final String MODVER = "0.0.3";
@@ -123,6 +124,10 @@ public class OyVey {
     public void init(FMLInitializationEvent event) {
         Display.setTitle("PhobosLite | Made By AlphaArmor");
         OyVey.load();
+    }
+
+    public PlayerManager getPlayerManager() {
+        return playerManager;
     }
 }
 

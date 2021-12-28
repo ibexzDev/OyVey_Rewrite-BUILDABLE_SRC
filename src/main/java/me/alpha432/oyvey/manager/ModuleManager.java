@@ -8,9 +8,11 @@ import me.alpha432.oyvey.features.Feature;
 import me.alpha432.oyvey.features.gui.OyVeyGui;
 import me.alpha432.oyvey.features.modules.Module;
 import me.alpha432.oyvey.features.modules.client.*;
+import me.alpha432.oyvey.features.modules.client.ChatModifier;
 import me.alpha432.oyvey.features.modules.combat.*;
 import me.alpha432.oyvey.features.modules.misc.*;
 import me.alpha432.oyvey.features.modules.movement.*;
+import me.alpha432.oyvey.features.modules.phoboslite.BowMcBomb;
 import me.alpha432.oyvey.features.modules.player.*;
 import me.alpha432.oyvey.features.modules.render.*;
 import me.alpha432.oyvey.util.Util;
@@ -35,6 +37,15 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new Shaders());
+        this.modules.add(new SkyColor());
+        this.modules.add(new Swing());
+        this.modules.add(new BoatFly());
+        this.modules.add(new GUIBlur());
+        this.modules.add(new EXPFast());
+        this.modules.add(new ChatModifier());
+        this.modules.add(new BowMcBomb());
+        this.modules.add(new Burrow());
         this.modules.add(new Velocity());
         this.modules.add(new PopChams());
         this.modules.add(new CSGOWatermark());

@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.regex.Pattern;
 
 public class TextUtil {
+    public static String shrug = "\u00af\\_(\u30c4)_/\u00af";
     public static final String BLACK = String.valueOf(ChatFormatting.BLACK);
     public static final String DARK_BLUE = String.valueOf(ChatFormatting.DARK_BLUE);
     public static final String DARK_GREEN = String.valueOf(ChatFormatting.DARK_GREEN);

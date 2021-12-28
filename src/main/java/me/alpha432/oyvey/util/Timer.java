@@ -42,5 +42,11 @@ public class Timer {
     public long getMs(long time) {
         return time / 1000000L;
     }
+
+    private long current;
+
+    public boolean passed(final long delay) {
+        return System.currentTimeMillis() - this.current >= delay;
+    }
 }
 

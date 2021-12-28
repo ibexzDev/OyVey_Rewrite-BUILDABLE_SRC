@@ -1,6 +1,7 @@
 package me.alpha432.oyvey.features.modules.movement;
 
 import me.alpha432.oyvey.features.modules.Module;
+import me.alpha432.oyvey.manager.SpeedManager;
 
 public class Speed
         extends Module {
@@ -9,8 +10,8 @@ public class Speed
     }
 
     @Override
-    public String getDisplayInfo() {
-        return "Strafe";
+    public void onEnable() {
+        SpeedManager.setIsJumping(true);
     }
 }
 
