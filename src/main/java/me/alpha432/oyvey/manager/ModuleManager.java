@@ -37,6 +37,8 @@ public class ModuleManager
     public Animation animationThread;
 
     public void init() {
+        this.modules.add(new GlintModify());
+        this.modules.add(new HitMarkers());
         this.modules.add(new Quiver());
         this.modules.add(new Shaders());
         this.modules.add(new SkyColor());
