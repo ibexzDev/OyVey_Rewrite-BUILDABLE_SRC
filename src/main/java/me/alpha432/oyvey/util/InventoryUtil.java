@@ -41,6 +41,21 @@ public class InventoryUtil
         }
     }
 
+
+    public static List<Integer> getItemInventory(Item item){
+        List<Integer> ints = new ArrayList<>();
+        for (int i = 9; i < 36; i++)
+        {
+            Item target = mc.player.inventory.getStackInSlot(i).getItem();
+
+            if (item instanceof ItemBlock && ((ItemBlock) item).getBlock().equals(item)) ints.add(i);
+        }
+
+        if(ints.size() == 0) ints.add(-1);
+
+        return ints;
+    }
+
     public static boolean isNull(ItemStack stack) {
         return stack == null || stack.getItem() instanceof ItemAir;
     }
